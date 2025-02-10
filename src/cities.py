@@ -27,7 +27,7 @@ def Graph_Maker(df_var):
     return G
 
 
-cot = pd.read_csv('cities.csv')
+cot = pd.read_csv('../data/cities.csv')
 
 cities = cot.loc[:,['city']]
 

@@ -40,7 +40,7 @@ def Graph_Maker(df_var):
     return G
 
 
-countries = pd.read_csv('country.csv')
+countries = pd.read_csv('../data/country.csv')
 countries.rename(columns={'value': 'Countries'}, inplace=True)
 
 countries['Starting letter'] = countries['Countries'].str.lower().str[0].apply(unidecode)
