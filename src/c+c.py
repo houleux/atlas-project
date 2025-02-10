@@ -87,3 +87,4 @@ plt.show()
 
 
 
+nx.write_gexf(G, 'places.gexf')

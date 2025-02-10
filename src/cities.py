@@ -67,3 +67,6 @@ nx.draw_networkx_labels(G, pos, font_size=5, font_color='#00b38f', ax=ax)
 ax.set_title("City Connection Graph", fontsize=16)
 ax.axis('off')  # Turn off axis
 plt.show()
+
+nx.write_gexf(G, 'cities.gexf')
+
