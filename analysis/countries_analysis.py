@@ -3,7 +3,7 @@ from unidecode import unidecode
 import matplotlib.pyplot as plt
 import numpy as np
 
-countries = pd.read_csv('country.csv')
+countries = pd.read_csv('../data/country.csv')
 countries.rename(columns={'value': 'Countries'}, inplace=True)
 
 countries['Starting letter'] = countries['Countries'].str.lower().str[0].apply(unidecode)

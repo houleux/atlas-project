@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-cot = pd.read_csv('cities.csv')
-countries = pd.read_csv('country.csv')
+cot = pd.read_csv('../data/cities.csv')
+countries = pd.read_csv('../data/country.csv')
 
 cities = cot.loc[:, ['city']]
 cities.rename(columns={'city':'place'}, inplace=True)

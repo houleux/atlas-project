@@ -3,7 +3,7 @@ from unidecode import unidecode
 import matplotlib.pyplot as plt
 import numpy as np
 
-cot = pd.read_csv('cities.csv')
+cot = pd.read_csv('../data/cities.csv')
 
 cities = cot.loc[:,['city']]
 
